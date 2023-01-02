@@ -6,7 +6,7 @@
 /*   By: sanghyep <sanghyep@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/23 12:08:08 by sanghyep          #+#    #+#             */
-/*   Updated: 2022/12/26 16:57:03 by sanghyep         ###   ########.fr       */
+/*   Updated: 2023/01/02 20:48:28 by sanghyep         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@ int main ()
 	fd = open("./test.txt", O_RDONLY);
 	
 	char *line = get_next_line(fd);
-	printf("lint = %s\n", line);
+	printf("get_next_line = %s\n", line);
 	//while(line = get_next_line(fd))
 	while(line)
 	{
 		line = get_next_line(fd);
-		printf("lint = %s\n", line);
+		printf("get_next_line = %s\n", line);
 	}
 }
