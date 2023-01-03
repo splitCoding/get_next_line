@@ -6,7 +6,7 @@
 /*   By: sanghyep <sanghyep@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/23 13:23:54 by sanghyep          #+#    #+#             */
-/*   Updated: 2022/12/26 16:59:57 by sanghyep         ###   ########.fr       */
+/*   Updated: 2023/01/03 13:19:32 by sanghyep         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,7 +90,7 @@ char	*ft_strdup(const char *s1)
 	char	*mem;
 
 	len = ft_strlen(s1);
-	mem = (char *)malloc(ft_strlen(s1) + 1);
+	mem = (char *)malloc(len + 1);
 	if (!mem)
 		return (NULL);
 	ft_strlcpy(mem, s1, len + 1);
