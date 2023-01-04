@@ -6,7 +6,7 @@
 /*   By: sanghyep <sanghyep@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/23 13:23:54 by sanghyep          #+#    #+#             */
-/*   Updated: 2023/01/03 19:20:25 by sanghyep         ###   ########.fr       */
+/*   Updated: 2023/01/04 16:27:36 by sanghyep         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,6 +86,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 
 int	contains_nl(char *str)
 {
+	if(!str)
+		return (0);
 	while (*str)
 		if (*str++ == '\n')
 			return (1);
